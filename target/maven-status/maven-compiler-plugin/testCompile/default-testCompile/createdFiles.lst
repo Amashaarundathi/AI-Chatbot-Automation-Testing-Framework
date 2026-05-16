@@ -1,0 +1,11 @@
+com\chatbot\functional\FunctionalTest.class
+com\chatbot\security\SecurityTest.class
+com\chatbot\ui\ChatBotUITest.class
+com\chatbot\ui\TestListener.class
+com\chatbot\performance\PerformanceTest.class
+com\chatbot\negative\NegativeTest.class
+com\chatbot\ui\ChatBotLoginTest.class
+com\chatbot\api\ResponseValidatorApiTest.class
+com\chatbot\api\ApiBaseTest.class
+com\chatbot\api\ChatBotApiTest.class
+com\chatbot\ui\BaseTest.class

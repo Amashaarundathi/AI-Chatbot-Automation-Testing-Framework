@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    testng-performance.xml — Performance and stress tests only.
+    Run nightly or on-demand. Separate from regression to avoid
+    polluting standard test runs with heavy load.
+
+    Usage:
+      mvn test -Dsurefire.suiteXmlFiles=testng-performance.xml
+-->
+
+<suite name="Performance Test Suite"
+       verbose="2"
+       parallel="tests"
+       thread-count="2">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Performance Tests">
+        <groups><run><include name="performance"/></run></groups>
+        <classes>
+            <class name="com.chatbot.performance.PerformanceTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    AI Chatbot Automation Testing Framework — TestNG Suite
+    ========================================================
+    Runs all test categories in parallel for maximum throughput.
+    Adjust thread-count and parallel mode as needed.
+
+    Usage:
+      mvn test -Dsurefire.suiteXmlFiles=testng.xml
+      mvn test -Dbrowser=chrome -Dbrowser.headless=true
+
+    Groups:
+      smoke        — critical path, runs first
+      functional   — business logic
+      negative     — invalid/boundary inputs
+      security     — vulnerability tests
+      api          — REST API tests
+      performance  — load & stress tests
+      ui           — browser UI tests
+-->
+
+<suite name="AI Chatbot Testing Suite"
+       verbose="2"
+       parallel="classes"
+       thread-count="4"
+       data-provider-thread-count="4">
+
+    <!-- ── Listeners ── -->
+    <listeners>
+        <listener class-name="com.chatbot.ui.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         1. SMOKE TESTS — Run first; fail fast
+    ═══════════════════════════════════════════════════════════ -->
+    <test name="Smoke Tests" preserve-order="true">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.chatbot.ui.ChatBotUITest"/>
+            <class name="com.chatbot.api.ChatBotApiTest"/>
+        </classes>
+    </test>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         2. FUNCTIONAL TESTS
+    ═══════════════════════════════════════════════════════════ -->
+    <test name="Functional Tests">
+        <groups>
+            <run>
+                <include name="functional"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.chatbot.functional.FunctionalTest"/>
+            <class name="com.chatbot.ui.ChatBotUITest"/>
+        </classes>
+    </test>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         3. API TESTS
+    ═══════════════════════════════════════════════════════════ -->
+    <test name="API Tests">
+        <groups>
+            <run>
+                <include name="api"/>
+                <exclude name="performance"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.chatbot.api.ChatBotApiTest"/>
+        </classes>
+    </test>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         4. NEGATIVE TESTS
+    ═══════════════════════════════════════════════════════════ -->
+    <test name="Negative Tests">
+        <groups>
+            <run>
+                <include name="negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.chatbot.negative.NegativeTest"/>
+        </classes>
+    </test>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         5. SECURITY TESTS
+    ═══════════════════════════════════════════════════════════ -->
+    <test name="Security Tests">
+        <groups>
+            <run>
+                <include name="security"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.chatbot.security.SecurityTest"/>
+        </classes>
+    </test>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         6. PERFORMANCE TESTS
+         Run last as they generate heavy load
+    ═══════════════════════════════════════════════════════════ -->
+    <test name="Performance Tests">
+        <groups>
+            <run>
+                <include name="performance"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.chatbot.performance.PerformanceTest"/>
+        </classes>
+    </test>
+
+</suite>

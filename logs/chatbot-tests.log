@@ -1,0 +1,29 @@
+2026-05-16 19:47:07.889 [main] INFO  com.chatbot.config.ConfigManager — Configuration loaded from: src/main/resources/config.properties
+2026-05-16 19:47:09.826 [main] INFO  com.chatbot.utils.ExtentReportManager — ExtentReports initialised → reports/ExtentReport.html
+2026-05-16 19:47:09.826 [main] INFO  com.chatbot.api.ChatBotApiTest — API Test Suite initialised. Base URI: https://api.your-chatbot-app.com/v1
+2026-05-16 19:47:09.839 [main] INFO  com.chatbot.ui.BaseTest — ========== TEST SUITE STARTING ==========
+2026-05-16 19:47:09.846 [main] INFO  com.chatbot.ui.TestListener — [LISTENER] Suite started: Smoke Tests
+2026-05-16 19:47:09.920 [TestNG-test-Smoke Tests-2] INFO  com.chatbot.ui.TestListener — [LISTENER] Test started: testHealthEndpointReturns200
+2026-05-16 19:47:09.926 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.ui.BaseTest — ------ Starting test: testGreetingResponse ------
+2026-05-16 19:47:09.932 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.utils.DriverManager — Initialising browser: chrome | headless: false
+2026-05-16 19:47:10.067 [TestNG-test-Smoke Tests-2] INFO  com.chatbot.utils.ApiUtil — GET /health
+2026-05-16 19:47:12.587 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.ui.TestListener — [LISTENER] Test started: testGreetingResponse
+2026-05-16 19:47:12.598 [TestNG-test-Smoke Tests-1] WARN  com.chatbot.ui.TestListener — [LISTENER] Test SKIPPED: testGreetingResponse
+2026-05-16 19:47:12.601 [TestNG-test-Smoke Tests-1] WARN  com.chatbot.ui.BaseTest — TEST SKIPPED: testGreetingResponse
+2026-05-16 19:47:12.601 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.ui.BaseTest — ------ Finished test: testGreetingResponse ------
+2026-05-16 19:47:12.612 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.ui.BaseTest — ------ Starting test: testPageLoadsSuccessfully ------
+2026-05-16 19:47:12.613 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.utils.DriverManager — Initialising browser: chrome | headless: false
+2026-05-16 19:47:13.562 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: No such host is known (api.your-chatbot-app.com)
+2026-05-16 19:47:13.565 [TestNG-test-Smoke Tests-2] INFO  com.chatbot.utils.DriverManager — Initialising browser: chrome | headless: false
+2026-05-16 19:47:13.807 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.ui.TestListener — [LISTENER] Test started: testPageLoadsSuccessfully
+2026-05-16 19:47:13.870 [TestNG-test-Smoke Tests-1] WARN  com.chatbot.ui.TestListener — [LISTENER] Test SKIPPED: testPageLoadsSuccessfully
+2026-05-16 19:47:13.873 [TestNG-test-Smoke Tests-1] WARN  com.chatbot.ui.BaseTest — TEST SKIPPED: testPageLoadsSuccessfully
+2026-05-16 19:47:13.874 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.ui.BaseTest — ------ Finished test: testPageLoadsSuccessfully ------
+2026-05-16 19:47:13.950 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.ui.BaseTest — ------ Starting test: testSendViaButton ------
+2026-05-16 19:47:13.951 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.utils.DriverManager — Initialising browser: chrome | headless: false
+2026-05-16 19:47:14.238 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: java.net.UnknownHostException: googlechromelabs.github.io
+2026-05-16 19:47:14.240 [TestNG-test-Smoke Tests-2] INFO  com.chatbot.utils.DriverManager — Initialising browser: chrome | headless: false
+2026-05-16 19:47:14.449 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.ui.TestListener — [LISTENER] Test started: testSendViaButton
+2026-05-16 19:47:14.470 [TestNG-test-Smoke Tests-1] WARN  com.chatbot.ui.TestListener — [LISTENER] Test SKIPPED: testSendViaButton
+2026-05-16 19:47:14.473 [TestNG-test-Smoke Tests-1] WARN  com.chatbot.ui.BaseTest — TEST SKIPPED: testSendViaButton
+2026-05-16 19:47:14.474 [TestNG-test-Smoke Tests-1] INFO  com.chatbot.ui.BaseTest — ------ Finished test: testSendViaButton ------

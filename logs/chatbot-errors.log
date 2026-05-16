@@ -1,0 +1,2 @@
+2026-05-16 19:47:13.562 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: No such host is known (api.your-chatbot-app.com)
+2026-05-16 19:47:14.238 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: java.net.UnknownHostException: googlechromelabs.github.io

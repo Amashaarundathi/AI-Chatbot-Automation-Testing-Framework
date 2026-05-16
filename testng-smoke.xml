@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    testng-smoke.xml — Smoke-only suite.
+    Run before every deployment for a fast sanity check (~2 min).
+
+    Usage:
+      mvn test -Dsurefire.suiteXmlFiles=testng-smoke.xml
+-->
+
+<suite name="Smoke Test Suite" verbose="1" parallel="methods" thread-count="3">
+
+    <listeners>
+        <listener class-name="com.chatbot.ui.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Smoke — UI + API" preserve-order="true">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.chatbot.ui.ChatBotUITest"/>
+            <class name="com.chatbot.api.ChatBotApiTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,278 @@
+{
+  "info": {
+    "name": "AI Chatbot API Test Collection",
+    "description": "Comprehensive Postman collection for AI chatbot API testing.\nRun with Newman: newman run chatbot-api-collection.json -e env.json",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": "1.0.0"
+  },
+  "variable": [
+    { "key": "baseUrl",    "value": "https://api.your-chatbot.com/v1" },
+    { "key": "authToken",  "value": "Bearer your-token-here" },
+    { "key": "sessionId",  "value": "postman-session-001" }
+  ],
+  "item": [
+
+    {
+      "name": "🔥 Smoke",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "{{authToken}}" }
+            ],
+            "url": { "raw": "{{baseUrl}}/health", "host": ["{{baseUrl}}"], "path": ["health"] }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "pm.test('Response time < 2000ms', () => pm.expect(pm.response.responseTime).to.be.below(2000));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Valid Chat Request",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "{{authToken}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Hello, how are you?\",\n  \"sessionId\": \"{{sessionId}}\",\n  \"userId\": \"postman-tester\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/chat", "host": ["{{baseUrl}}"], "path": ["chat"] }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                  "pm.test('Response has body', () => pm.expect(pm.response.json()).to.have.property('response'));",
+                  "pm.test('Response not empty', () => pm.expect(pm.response.json().response).to.not.be.empty);",
+                  "pm.test('Response time < 3000ms', () => pm.expect(pm.response.responseTime).to.be.below(3000));",
+                  "const jsonData = pm.response.json();",
+                  "pm.environment.set('lastSessionId', jsonData.sessionId);"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "📋 Functional",
+      "item": [
+        {
+          "name": "Greeting — Hello",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "{{authToken}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Hello!\",\n  \"sessionId\": \"{{sessionId}}-greet\",\n  \"userId\": \"postman-tester\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/chat", "host": ["{{baseUrl}}"], "path": ["chat"] }
+          },
+          "event": [{
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                "pm.test('Contains greeting keyword', () => {",
+                "  const body = pm.response.json().response.toLowerCase();",
+                "  const greetings = ['hello','hi','hey','welcome','assist'];",
+                "  pm.expect(greetings.some(g => body.includes(g))).to.be.true;",
+                "});"
+              ]
+            }
+          }]
+        },
+        {
+          "name": "FAQ — Password Reset",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "{{authToken}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"How do I reset my password?\",\n  \"sessionId\": \"{{sessionId}}-faq\",\n  \"userId\": \"postman-tester\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/chat", "host": ["{{baseUrl}}"], "path": ["chat"] }
+          },
+          "event": [{
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                "pm.test('Response not empty', () => pm.expect(pm.response.json().response).to.not.be.empty);"
+              ]
+            }
+          }]
+        }
+      ]
+    },
+
+    {
+      "name": "❌ Negative",
+      "item": [
+        {
+          "name": "Empty Message Body",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "{{authToken}}" }
+            ],
+            "body": { "mode": "raw", "raw": "{\n  \"message\": \"\",\n  \"sessionId\": \"neg-session\"\n}" },
+            "url": { "raw": "{{baseUrl}}/chat", "host": ["{{baseUrl}}"], "path": ["chat"] }
+          },
+          "event": [{
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test('Returns 400 or 422', () => {",
+                "  pm.expect([400, 422]).to.include(pm.response.code);",
+                "});"
+              ]
+            }
+          }]
+        },
+        {
+          "name": "Missing message field",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "{{authToken}}" }
+            ],
+            "body": { "mode": "raw", "raw": "{\n  \"sessionId\": \"neg-missing-field\"\n}" },
+            "url": { "raw": "{{baseUrl}}/chat", "host": ["{{baseUrl}}"], "path": ["chat"] }
+          },
+          "event": [{
+            "listen": "test",
+            "script": {
+              "exec": ["pm.test('Returns 400 or 422', () => pm.expect([400,422]).to.include(pm.response.code));"]
+            }
+          }]
+        }
+      ]
+    },
+
+    {
+      "name": "🔒 Security",
+      "item": [
+        {
+          "name": "No Auth Token — Expect 401",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Hello without auth\",\n  \"sessionId\": \"no-auth-session\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/chat", "host": ["{{baseUrl}}"], "path": ["chat"] }
+          },
+          "event": [{
+            "listen": "test",
+            "script": { "exec": ["pm.test('Returns 401', () => pm.response.to.have.status(401));"] }
+          }]
+        },
+        {
+          "name": "Invalid Token — Expect 401",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer invalid_token_xyz" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Hello with bad token\",\n  \"sessionId\": \"bad-token-session\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/chat", "host": ["{{baseUrl}}"], "path": ["chat"] }
+          },
+          "event": [{
+            "listen": "test",
+            "script": {
+              "exec": ["pm.test('Returns 401 or 403', () => pm.expect([401,403]).to.include(pm.response.code));"]
+            }
+          }]
+        },
+        {
+          "name": "SQL Injection Payload",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "{{authToken}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"' OR '1'='1\",\n  \"sessionId\": \"sql-inject-session\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/chat", "host": ["{{baseUrl}}"], "path": ["chat"] }
+          },
+          "event": [{
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test('Not 500', () => pm.expect(pm.response.code).to.not.equal(500));",
+                "pm.test('No SQL error in response', () => {",
+                "  const body = pm.response.text().toLowerCase();",
+                "  pm.expect(body).to.not.include('sql error');",
+                "  pm.expect(body).to.not.include('syntax error');",
+                "});"
+              ]
+            }
+          }]
+        }
+      ]
+    },
+
+    {
+      "name": "⚡ Performance",
+      "item": [
+        {
+          "name": "Response Time Baseline",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "{{authToken}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Baseline performance test\",\n  \"sessionId\": \"perf-baseline\"\n}"
+            },
+            "url": { "raw": "{{baseUrl}}/chat", "host": ["{{baseUrl}}"], "path": ["chat"] }
+          },
+          "event": [{
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test('Status 200', () => pm.response.to.have.status(200));",
+                "pm.test('Response under 3000ms', () => pm.expect(pm.response.responseTime).to.be.below(3000));"
+              ]
+            }
+          }]
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    testng-regression.xml — Full regression suite (UI + API + Security + Negative).
+    Excludes performance tests (run those separately via testng-performance.xml).
+
+    Usage:
+      mvn test -Dsurefire.suiteXmlFiles=testng-regression.xml
+-->
+
+<suite name="Regression Test Suite"
+       verbose="2"
+       parallel="classes"
+       thread-count="4"
+       data-provider-thread-count="4">
+
+    <listeners>
+        <listener class-name="com.chatbot.ui.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <!-- Smoke — fast gate -->
+    <test name="1. Smoke" preserve-order="true">
+        <groups><run><include name="smoke"/></run></groups>
+        <classes>
+            <class name="com.chatbot.ui.ChatBotUITest"/>
+            <class name="com.chatbot.api.ChatBotApiTest"/>
+        </classes>
+    </test>
+
+    <!-- UI Tests -->
+    <test name="2. UI Tests">
+        <groups><run><include name="ui"/><exclude name="smoke"/></run></groups>
+        <classes>
+            <class name="com.chatbot.ui.ChatBotUITest"/>
+            <class name="com.chatbot.ui.ChatBotLoginTest"/>
+        </classes>
+    </test>
+
+    <!-- API Tests -->
+    <test name="3. API Tests">
+        <groups><run><include name="api"/><exclude name="performance"/></run></groups>
+        <classes>
+            <class name="com.chatbot.api.ChatBotApiTest"/>
+            <class name="com.chatbot.api.ResponseValidatorApiTest"/>
+        </classes>
+    </test>
+
+    <!-- Functional Tests -->
+    <test name="4. Functional Tests">
+        <groups><run><include name="functional"/></run></groups>
+        <classes>
+            <class name="com.chatbot.functional.FunctionalTest"/>
+        </classes>
+    </test>
+
+    <!-- Negative Tests -->
+    <test name="5. Negative Tests">
+        <groups><run><include name="negative"/></run></groups>
+        <classes>
+            <class name="com.chatbot.negative.NegativeTest"/>
+        </classes>
+    </test>
+
+    <!-- Security Tests -->
+    <test name="6. Security Tests">
+        <groups><run><include name="security"/></run></groups>
+        <classes>
+            <class name="com.chatbot.security.SecurityTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,68 @@
+[
+  {
+    "prompt": "Hello",
+    "expectedKeyword": "hello",
+    "category": "greeting",
+    "priority": "high"
+  },
+  {
+    "prompt": "Hi there, how are you?",
+    "expectedKeyword": "help",
+    "category": "greeting",
+    "priority": "high"
+  },
+  {
+    "prompt": "Good morning!",
+    "expectedKeyword": "",
+    "category": "greeting",
+    "priority": "medium"
+  },
+  {
+    "prompt": "What can you help me with?",
+    "expectedKeyword": "help",
+    "category": "faq",
+    "priority": "high"
+  },
+  {
+    "prompt": "How do I reset my password?",
+    "expectedKeyword": "password",
+    "category": "faq",
+    "priority": "high"
+  },
+  {
+    "prompt": "I need technical support",
+    "expectedKeyword": "support",
+    "category": "support",
+    "priority": "high"
+  },
+  {
+    "prompt": "What are your business hours?",
+    "expectedKeyword": "",
+    "category": "faq",
+    "priority": "medium"
+  },
+  {
+    "prompt": "How do I cancel my subscription?",
+    "expectedKeyword": "cancel",
+    "category": "support",
+    "priority": "medium"
+  },
+  {
+    "prompt": "Tell me about your pricing",
+    "expectedKeyword": "",
+    "category": "faq",
+    "priority": "low"
+  },
+  {
+    "prompt": "Thank you!",
+    "expectedKeyword": "",
+    "category": "closing",
+    "priority": "low"
+  },
+  {
+    "prompt": "Goodbye",
+    "expectedKeyword": "",
+    "category": "closing",
+    "priority": "low"
+  }
+]
