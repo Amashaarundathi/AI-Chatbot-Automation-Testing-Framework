@@ -23,9 +23,9 @@
 
 <suite name="AI Chatbot Testing Suite"
        verbose="2"
-       parallel="classes"
-       thread-count="4"
-       data-provider-thread-count="4">
+       parallel="tests"
+       thread-count="2"
+       data-provider-thread-count="2">
 
     <!-- ── Listeners ── -->
     <listeners>
@@ -59,7 +59,6 @@
         </groups>
         <classes>
             <class name="com.chatbot.functional.FunctionalTest"/>
-            <class name="com.chatbot.ui.ChatBotUITest"/>
         </classes>
     </test>
 

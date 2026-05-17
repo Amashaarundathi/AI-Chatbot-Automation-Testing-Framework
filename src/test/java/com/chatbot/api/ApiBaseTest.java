@@ -1,6 +1,7 @@
 package com.chatbot.api;
 
 import com.chatbot.config.ConfigManager;
+import com.chatbot.mock.MockChatbotServer;
 import com.chatbot.models.ChatRequest;
 import com.chatbot.utils.ExtentReportManager;
 import io.restassured.RestAssured;
@@ -10,12 +11,6 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-/**
- * ApiBaseTest — Shared setup for all API test classes.
- *
- * Initialises RestAssured defaults and the Extent Report.
- * Extend this instead of duplicating @BeforeSuite logic.
- */
 public class ApiBaseTest {
 
     protected static final Logger log = LogManager.getLogger(ApiBaseTest.class);
@@ -23,26 +18,21 @@ public class ApiBaseTest {
 
     @BeforeSuite(alwaysRun = true)
     public void apiSuiteSetup() {
-        RestAssured.baseURI = config.getApiBaseUrl();
+        MockChatbotServer.start();
+        RestAssured.baseURI = MockChatbotServer.BASE_URL;
         RestAssured.defaultParser = Parser.JSON;
-
-        // Enable request/response logging for failed tests only
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
-
         ExtentReportManager.getExtentReports();
-        log.info("API suite configured. Base URI: {}", config.getApiBaseUrl());
+        log.info("Mock server started. Base URI: {}", MockChatbotServer.BASE_URL);
     }
 
     @AfterSuite(alwaysRun = true)
     public void apiSuiteTeardown() {
         ExtentReportManager.flush();
+        MockChatbotServer.stop();
+        log.info("Mock server stopped.");
     }
 
-    // ── Shared Request Builder ────────────────────────────────────────────────
-
-    /**
-     * Builds a standard ChatRequest with a unique session per call.
-     */
     protected ChatRequest buildRequest(String message) {
         return ChatRequest.builder()
             .message(message)

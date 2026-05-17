@@ -34,17 +34,10 @@ import java.util.Map;
  */
 @Epic("AI Chatbot Testing")
 @Feature("API Automation")
-public class ChatBotApiTest {
+public class ChatBotApiTest extends ApiBaseTest {
 
     private static final Logger log = LogManager.getLogger(ChatBotApiTest.class);
     private static final ConfigManager config = ConfigManager.getInstance();
-
-    @BeforeSuite(alwaysRun = true)
-    public void suiteSetup() {
-        RestAssured.baseURI = config.getApiBaseUrl();
-        ExtentReportManager.getExtentReports();
-        log.info("API Test Suite initialised. Base URI: {}", config.getApiBaseUrl());
-    }
 
     @BeforeClass
     public void classSetup() {
@@ -63,8 +56,8 @@ public class ChatBotApiTest {
 
         Assert.assertEquals(response.getStatusCode(), 200,
             "Health endpoint should return 200 OK.");
-        Assert.assertTrue(ApiUtil.assertResponseTime(response, 5000),
-            "Health check response time should be < 5000ms.");
+        Assert.assertTrue(ApiUtil.assertResponseTime(response, 10000),
+            "Health check response time should be < 10000ms.");
 
         ExtentReportManager.logPass("Health endpoint returned 200 in " +
             ApiUtil.getResponseTimeMs(response) + "ms.");

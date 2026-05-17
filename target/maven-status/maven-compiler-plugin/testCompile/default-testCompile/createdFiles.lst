@@ -9,3 +9,4 @@ com\chatbot\api\ResponseValidatorApiTest.class
 com\chatbot\api\ApiBaseTest.class
 com\chatbot\api\ChatBotApiTest.class
 com\chatbot\ui\BaseTest.class
+com\chatbot\mock\MockChatbotServer.class

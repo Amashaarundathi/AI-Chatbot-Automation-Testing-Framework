@@ -41,6 +41,10 @@ public class DriverManager {
      * Initialises a WebDriver based on config.properties browser setting.
      */
     public static void initDriver() {
+        if (driverThread.get() != null) {
+            log.info("WebDriver already exists for this thread, reusing.");
+            return;
+        }
         String browser = config.getBrowser().toLowerCase().trim();
         boolean headless = config.isHeadless();
         WebDriver driver;

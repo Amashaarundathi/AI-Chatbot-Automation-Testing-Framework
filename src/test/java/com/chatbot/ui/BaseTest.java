@@ -1,6 +1,7 @@
 package com.chatbot.ui;
 
 import com.chatbot.config.ConfigManager;
+import com.chatbot.mock.MockChatbotServer;
 import com.chatbot.pages.ChatBotPage;
 import com.chatbot.utils.DriverManager;
 import com.chatbot.utils.ExtentReportManager;
@@ -35,13 +36,32 @@ public class BaseTest {
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite() {
         log.info("========== TEST SUITE STARTING ==========");
-        ExtentReportManager.getExtentReports(); // initialise report
+        MockChatbotServer.start();
+        log.info("Mock server started on {}", MockChatbotServer.BASE_URL);
+        ExtentReportManager.getExtentReports();
     }
 
     @AfterSuite(alwaysRun = true)
     public void afterSuite() {
         ExtentReportManager.flush();
+        MockChatbotServer.stop();
         log.info("========== TEST SUITE COMPLETE ==========");
+    }
+
+    // ── Class Level — one browser per test class ──────────────────────────────
+
+    @BeforeClass(alwaysRun = true)
+    public void setUpClass() {
+        DriverManager.initDriver();
+        chatBotPage = new ChatBotPage(DriverManager.getDriver());
+        DriverManager.getDriver().get(config.getAppBaseUrl());
+        log.info("Browser opened for class: {}", getClass().getSimpleName());
+    }
+
+    @AfterClass(alwaysRun = true)
+    public void tearDownClass() {
+        DriverManager.quitDriver();
+        log.info("Browser closed for class: {}", getClass().getSimpleName());
     }
 
     // ── Test Level ────────────────────────────────────────────────────────────
@@ -49,13 +69,9 @@ public class BaseTest {
     @BeforeMethod(alwaysRun = true)
     public void setUp(java.lang.reflect.Method method) {
         log.info("------ Starting test: {} ------", method.getName());
-        DriverManager.initDriver();
+        // Refresh page before each test to reset chat state
+        DriverManager.getDriver().navigate().refresh();
         chatBotPage = new ChatBotPage(DriverManager.getDriver());
-
-        // Navigate to the app
-        DriverManager.getDriver().get(config.getAppBaseUrl());
-
-        // Create an Extent test node
         Test testAnnotation = method.getAnnotation(Test.class);
         String description = (testAnnotation != null) ? testAnnotation.description() : "";
         ExtentReportManager.createTest(method.getName(), description);
@@ -63,18 +79,13 @@ public class BaseTest {
 
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
-        // Capture screenshot on failure
         if (result.getStatus() == ITestResult.FAILURE) {
             log.error("TEST FAILED: {}", result.getName());
-
-            // Attach to Allure
             byte[] screenshot = ScreenshotUtil.captureAsBytes();
             if (screenshot.length > 0) {
                 Allure.addAttachment("Failure Screenshot", "image/png",
                     new ByteArrayInputStream(screenshot), ".png");
             }
-
-            // Log to ExtentReports
             ExtentReportManager.logFail(
                 result.getThrowable() != null ? result.getThrowable().getMessage() : "Test failed",
                 result.getName()
@@ -86,8 +97,6 @@ public class BaseTest {
             log.warn("TEST SKIPPED: {}", result.getName());
             ExtentReportManager.logSkip("Test skipped.");
         }
-
-        DriverManager.quitDriver();
         log.info("------ Finished test: {} ------", result.getName());
     }
 

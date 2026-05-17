@@ -1,2 +1,409 @@
-2026-05-16 19:47:13.562 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: No such host is known (api.your-chatbot-app.com)
-2026-05-16 19:47:14.238 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: java.net.UnknownHostException: googlechromelabs.github.io
+2026-05-17 00:48:26.038 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testEmptyMessage | Reason: Connection refused: connect
+2026-05-17 00:48:31.282 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testInvalidContentType | Reason: Connection refused: connect
+2026-05-17 00:48:31.769 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testLargePayload | Reason: Connection refused: connect
+2026-05-17 00:48:31.922 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMissingMessageField | Reason: Connection refused: connect
+2026-05-17 00:48:32.113 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testNullRequestBody | Reason: Connection refused: connect
+2026-05-17 00:48:32.242 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testVariousMessageTypes | Reason: Connection refused: connect
+2026-05-17 00:48:32.394 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testVariousMessageTypes | Reason: Connection refused: connect
+2026-05-17 00:48:32.516 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testVariousMessageTypes | Reason: Connection refused: connect
+2026-05-17 00:48:32.624 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testVariousMessageTypes | Reason: Connection refused: connect
+2026-05-17 00:48:32.719 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testVariousMessageTypes | Reason: Connection refused: connect
+2026-05-17 00:48:32.866 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testWrongHttpMethod | Reason: Connection refused: connect
+2026-05-17 00:48:32.958 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: Connection refused: connect
+2026-05-17 00:48:33.067 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidChatRequest | Reason: Connection refused: connect
+2026-05-17 00:48:33.186 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testChatResponseSchema | Reason: Connection refused: connect
+2026-05-17 00:48:33.298 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testResponseTimeWithinThreshold | Reason: Connection refused: connect
+2026-05-17 00:48:34.027 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: Connection refused: connect
+2026-05-17 00:48:36.372 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: Connection refused: connect
+2026-05-17 00:48:36.446 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: Connection refused: connect
+2026-05-17 00:48:36.539 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: Connection refused: connect
+2026-05-17 00:48:36.624 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: Connection refused: connect
+2026-05-17 00:48:36.706 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: Connection refused: connect
+2026-05-17 00:48:36.782 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: Connection refused: connect
+2026-05-17 00:48:36.865 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGeneralQueryResponses | Reason: Connection refused: connect
+2026-05-17 00:48:36.929 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGeneralQueryResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.002 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGeneralQueryResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.082 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGeneralQueryResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.157 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGeneralQueryResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.237 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGeneralQueryResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.323 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGeneralQueryResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.402 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGreetingResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.497 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGreetingResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.592 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGreetingResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.660 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGreetingResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.725 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGreetingResponses | Reason: Connection refused: connect
+2026-05-17 00:48:37.789 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testResponsePoliteness | Reason: Connection refused: connect
+2026-05-17 00:48:37.867 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testResponseTimePerCategory | Reason: Connection refused: connect
+2026-05-17 00:48:37.951 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testResponseTimePerCategory | Reason: Connection refused: connect
+2026-05-17 00:48:38.036 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testResponseTimePerCategory | Reason: Connection refused: connect
+2026-05-17 00:48:38.152 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testResponseTimePerCategory | Reason: Connection refused: connect
+2026-05-17 00:48:38.238 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testSessionContinuity | Reason: Connection refused: connect
+2026-05-17 00:48:38.400 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testEmptyMessage | Reason: Connection refused: connect
+2026-05-17 00:48:39.440 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testInvalidContentType | Reason: Connection refused: connect
+2026-05-17 00:48:39.638 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testLargePayload | Reason: Connection refused: connect
+2026-05-17 00:48:39.720 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMissingMessageField | Reason: Connection refused: connect
+2026-05-17 00:48:39.791 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testNullRequestBody | Reason: Connection refused: connect
+2026-05-17 00:48:39.856 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testVariousMessageTypes | Reason: Connection refused: connect
+2026-05-17 00:48:39.929 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testVariousMessageTypes | Reason: Connection refused: connect
+2026-05-17 00:48:40.003 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testVariousMessageTypes | Reason: Connection refused: connect
+2026-05-17 00:48:40.149 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testVariousMessageTypes | Reason: Connection refused: connect
+2026-05-17 00:48:40.218 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testVariousMessageTypes | Reason: Connection refused: connect
+2026-05-17 00:48:40.301 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testWrongHttpMethod | Reason: Connection refused: connect
+2026-05-17 00:48:40.398 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: Connection refused: connect
+2026-05-17 00:48:40.583 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidChatRequest | Reason: Connection refused: connect
+2026-05-17 00:48:40.680 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testChatResponseSchema | Reason: Connection refused: connect
+2026-05-17 11:03:31.547 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: Connection refused: connect
+2026-05-17 11:03:40.085 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidChatRequest | Reason: Connection refused: connect
+2026-05-17 11:04:21.426 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: Connection refused: connect
+2026-05-17 11:04:22.788 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidChatRequest | Reason: Connection refused: connect
+2026-05-17 11:21:27.032 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: Connection refused: connect
+2026-05-17 11:21:31.778 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidChatRequest | Reason: Connection refused: connect
+2026-05-17 11:22:13.165 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: Connection refused: connect
+2026-05-17 11:22:14.210 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidChatRequest | Reason: Connection refused: connect
+2026-05-17 11:28:51.330 [TestNG-test-Smoke Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testHealthEndpointReturns200 | Reason: Health check response time should be < 5000ms. expected [true] but found [false]
+2026-05-17 11:29:13.773 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGreetingResponse | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62007}, goog:processID: 15996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62007/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f17ed554e0a232be26e30a18335a272
+2026-05-17 11:29:13.840 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testGreetingResponse
+2026-05-17 11:29:28.935 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testPageLoadsSuccessfully | Reason: Chat container should be visible after page load. expected [true] but found [false]
+2026-05-17 11:29:29.057 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testPageLoadsSuccessfully
+2026-05-17 11:29:51.196 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testSendViaButton | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62084}, goog:processID: 11440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62084/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b357fd15b9f297448f019975b1ee3544
+2026-05-17 11:29:51.246 [TestNG-test-Smoke Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testSendViaButton
+2026-05-17 11:30:13.580 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGreetingResponse | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62109}, goog:processID: 6940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62109/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 19082fcd6d5b547554c224bef489a78e
+2026-05-17 11:30:13.629 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testGreetingResponse
+2026-05-17 11:30:24.932 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testPageLoadsSuccessfully | Reason: Chat container should be visible after page load. expected [true] but found [false]
+2026-05-17 11:30:25.068 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testPageLoadsSuccessfully
+2026-05-17 11:30:47.066 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testSendViaButton | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62162}, goog:processID: 15300, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62162/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7126483aea357e4a6779df66751b41d8
+2026-05-17 11:30:47.196 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testSendViaButton
+2026-05-17 11:44:45.965 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: FAQ response should contain relevant keywords. Got: hello! i am your ai assistant. how can i help you today? expected [true] but found [false]
+2026-05-17 11:44:47.428 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: FAQ response should contain relevant keywords. Got: hello! i am your ai assistant. how can i help you today? expected [true] but found [false]
+2026-05-17 11:44:47.808 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: FAQ response should contain relevant keywords. Got: hello! i am your ai assistant. how can i help you today? expected [true] but found [false]
+2026-05-17 11:44:48.211 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: FAQ response should contain relevant keywords. Got: hello! i am your ai assistant. how can i help you today? expected [true] but found [false]
+2026-05-17 11:44:48.562 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: FAQ response should contain relevant keywords. Got: hello! i am your ai assistant. how can i help you today? expected [true] but found [false]
+2026-05-17 11:44:52.882 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testResponsePoliteness | Reason: Response contains inappropriate term 'hell' for input: Hello expected [false] but found [true]
+2026-05-17 11:47:13.287 [TestNG-test-Functional Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMultipleSequentialMessages | Reason: Bot should have 4 responses. expected [4] but found [5]
+2026-05-17 11:47:13.344 [TestNG-test-Functional Tests-2] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testMultipleSequentialMessages
+2026-05-17 12:09:19.121 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: FAQ response should contain relevant keywords. Got: i understand your query. let me help you with that. could you please provide more details? expected [true] but found [false]
+2026-05-17 12:09:22.257 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: FAQ response should contain relevant keywords. Got: i understand your query. let me help you with that. could you please provide more details? expected [true] but found [false]
+2026-05-17 12:09:22.564 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: FAQ response should contain relevant keywords. Got: i understand your query. let me help you with that. could you please provide more details? expected [true] but found [false]
+2026-05-17 12:09:22.856 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: FAQ response should contain relevant keywords. Got: i understand your query. let me help you with that. could you please provide more details? expected [true] but found [false]
+2026-05-17 12:09:23.180 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testFAQResponses | Reason: FAQ response should contain relevant keywords. Got: i understand your query. let me help you with that. could you please provide more details? expected [true] but found [false]
+2026-05-17 12:09:25.600 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGreetingResponses | Reason: Greeting response should contain one of: hello, hi, hey, welcome, assist. Got: i understand your query. let me help you with that. could you please provide more details? expected [true] but found [false]
+2026-05-17 12:09:25.923 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGreetingResponses | Reason: Greeting response should contain one of: morning, hello, hi, welcome, day. Got: i understand your query. let me help you with that. could you please provide more details? expected [true] but found [false]
+2026-05-17 12:09:26.210 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testGreetingResponses | Reason: Greeting response should contain one of: evening, hello, hi, welcome. Got: i understand your query. let me help you with that. could you please provide more details? expected [true] but found [false]
+2026-05-17 12:11:45.334 [TestNG-test-Functional Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMultipleSequentialMessages | Reason: Bot should have 4 responses. expected [4] but found [5]
+2026-05-17 12:11:45.451 [TestNG-test-Functional Tests-2] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testMultipleSequentialMessages
+2026-05-17 12:12:05.199 [TestNG-PoolService-3] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [69d1813f37f1f646a470e545883c6e74, findElement {value=textarea[data-testid='chat-input'], #chat-input, .chat-input, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63350}, goog:processID: 4780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63350/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 69d1813f37f1f646a470e545883c6e74
+2026-05-17 12:12:05.373 [TestNG-PoolService-3] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [69d1813f37f1f646a470e545883c6e74, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63350}, goog:processID: 4780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63350/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 69d1813f37f1f646a470e545883c6e74
+2026-05-17 12:12:05.374 [TestNG-PoolService-3] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 12:12:05.388 [TestNG-PoolService-3] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [69d1813f37f1f646a470e545883c6e74, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63350}, goog:processID: 4780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63350/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 69d1813f37f1f646a470e545883c6e74
+2026-05-17 12:12:08.639 [TestNG-PoolService-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63351}, goog:processID: 12100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63351/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03fa6187be6ea14490ced633b0770145
+2026-05-17 12:12:10.706 [TestNG-PoolService-4] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03fa6187be6ea14490ced633b0770145, findElement {value=textarea[data-testid='chat-input'], #chat-input, .chat-input, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63351}, goog:processID: 12100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63351/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03fa6187be6ea14490ced633b0770145
+2026-05-17 12:12:10.766 [TestNG-PoolService-4] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 12:12:10.823 [TestNG-PoolService-1] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03fa6187be6ea14490ced633b0770145, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63351}, goog:processID: 12100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63351/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03fa6187be6ea14490ced633b0770145
+2026-05-17 12:12:10.824 [TestNG-PoolService-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 12:12:10.829 [TestNG-PoolService-1] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03fa6187be6ea14490ced633b0770145, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63351}, goog:processID: 12100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63351/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03fa6187be6ea14490ced633b0770145
+2026-05-17 12:12:10.833 [TestNG-PoolService-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03fa6187be6ea14490ced633b0770145, findElement {value=textarea[data-testid='chat-input'], #chat-input, .chat-input, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63351}, goog:processID: 12100, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63351/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03fa6187be6ea14490ced633b0770145
+2026-05-17 12:12:10.845 [TestNG-PoolService-2] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [418a3e1fe00388bf7583b6338824e7b5, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63352}, goog:processID: 15148, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63352/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 418a3e1fe00388bf7583b6338824e7b5
+2026-05-17 12:12:10.846 [TestNG-PoolService-2] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 12:12:10.988 [TestNG-PoolService-2] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [418a3e1fe00388bf7583b6338824e7b5, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63352}, goog:processID: 15148, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63352/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 418a3e1fe00388bf7583b6338824e7b5
+2026-05-17 12:12:12.072 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMissingMessageField | Reason: API should return 400/422 when message is missing. Got: 404 expected [true] but found [false]
+2026-05-17 12:13:39.872 [TestNG-test-Negative Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testNegativeInputsDataDriven | Reason: unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e04b34348c9f80ce5a6cc59639227ffc, sendKeysToElement {id=f.8B11FF78D6E14DD5C58466522EB7A6DA.d.F898ADD5C2F6AE7B5C7388B5F3141029.e.47, value=[Ljava.lang.CharSequence;@272ca486}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63460}, goog:processID: 244, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63460/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e04b34348c9f80ce5a6cc59639227ffc)] -> css selector: textarea[data-testid='chat-input'], #chat-input, .chat-input]
+Session ID: e04b34348c9f80ce5a6cc59639227ffc
+2026-05-17 12:13:39.939 [TestNG-test-Negative Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testNegativeInputsDataDriven
+2026-05-17 12:14:26.868 [TestNG-test-Security Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testExpiredAuthToken | Reason: Expired token should return 401/403. Got: 200 expected [true] but found [false]
+2026-05-17 12:14:26.920 [TestNG-test-Security Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testExpiredAuthToken
+2026-05-17 12:14:27.349 [TestNG-test-Security Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testInvalidAuthToken | Reason: Invalid token should return 401/403. Got: 200 expected [true] but found [false]
+2026-05-17 12:14:27.424 [TestNG-test-Security Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testInvalidAuthToken
+2026-05-17 12:14:29.504 [TestNG-test-Security Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMissingAuthToken | Reason: Missing auth token should return 401 Unauthorized. Got: 200 expected [401] but found [200]
+2026-05-17 12:14:29.701 [TestNG-test-Security Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testMissingAuthToken
+2026-05-17 12:15:17.020 [TestNG-test-Security Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testSqlInjectionViaUI | Reason: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [da7a4eece2799d8ea91423afc68705cd, findElement {value=.bot-message, [data-role='assistant'], .message.bot, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63515}, goog:processID: 540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63515/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da7a4eece2799d8ea91423afc68705cd
+2026-05-17 12:15:17.024 [TestNG-test-Security Tests-1] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [da7a4eece2799d8ea91423afc68705cd, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63515}, goog:processID: 540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63515/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da7a4eece2799d8ea91423afc68705cd
+2026-05-17 12:15:17.025 [TestNG-test-Security Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testSqlInjectionViaUI
+2026-05-17 12:15:17.029 [TestNG-test-Security Tests-1] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [da7a4eece2799d8ea91423afc68705cd, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63515}, goog:processID: 540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63515/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da7a4eece2799d8ea91423afc68705cd
+2026-05-17 13:25:42.535 [TestNG-test-Functional Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testResponsePoliteness | Reason: Response contains inappropriate term 'hell' for input: Hello expected [false] but found [true]
+2026-05-17 13:28:04.318 [TestNG-test-Functional Tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMultipleSequentialMessages | Reason: Bot should have 4 responses. expected [4] but found [5]
+2026-05-17 13:28:04.411 [TestNG-test-Functional Tests-2] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testMultipleSequentialMessages
+2026-05-17 13:28:27.845 [TestNG-PoolService-4] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64467}, goog:processID: 13824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64467/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28799e771100f85cc579cc65a98adec2
+2026-05-17 13:28:28.328 [TestNG-PoolService-3] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64471}, goog:processID: 16892, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64471/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b5d235b40b2f77dbba21d0c3ee9818f
+2026-05-17 13:28:28.416 [TestNG-PoolService-3] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 13:28:28.984 [TestNG-PoolService-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64502}, goog:processID: 18404, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64502/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d91f6a425a94e7ff6e229509861bb590
+2026-05-17 13:28:29.068 [TestNG-PoolService-2] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 13:28:37.894 [TestNG-PoolService-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64467}, goog:processID: 13824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64467/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28799e771100f85cc579cc65a98adec2
+2026-05-17 13:28:37.959 [TestNG-PoolService-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 13:28:37.959 [TestNG-PoolService-4] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 13:28:49.231 [TestNG-PoolService-3] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64471}, goog:processID: 16892, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64471/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b5d235b40b2f77dbba21d0c3ee9818f
+2026-05-17 13:28:49.346 [TestNG-PoolService-3] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 13:28:50.036 [TestNG-PoolService-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64502}, goog:processID: 18404, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64502/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d91f6a425a94e7ff6e229509861bb590
+2026-05-17 13:28:50.170 [TestNG-PoolService-2] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 13:28:58.338 [TestNG-PoolService-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64466}, goog:processID: 12436, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64466/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ab671436497e247eb6cb3108eae0395
+2026-05-17 13:29:08.351 [TestNG-PoolService-4] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testValidPromptsDataDriven | Reason: Expected condition failed: waiting for element to be clickable: By.cssSelector: textarea[data-testid='chat-input'], #chat-input, .chat-input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64466}, goog:processID: 12436, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64466/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ab671436497e247eb6cb3108eae0395
+2026-05-17 13:29:08.475 [TestNG-PoolService-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 13:29:08.498 [TestNG-PoolService-4] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testValidPromptsDataDriven
+2026-05-17 13:29:11.344 [TestNG-test-API Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMissingMessageField | Reason: API should return 400/422 when message is missing. Got: 404 expected [true] but found [false]
+2026-05-17 13:30:37.184 [TestNG-test-Negative Tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testNegativeInputsDataDriven | Reason: unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f1f8261d485d314d236940caf89a9928, sendKeysToElement {value=[Ljava.lang.CharSequence;@1b40973e, id=f.E75DAD7191E04C36F6A78274022652D3.d.81977A9BCD260033217C9D7888CFAE6E.e.45}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64612}, goog:processID: 18368, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64612/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f1f8261d485d314d236940caf89a9928)] -> css selector: textarea[data-testid='chat-input'], #chat-input, .chat-input]
+Session ID: f1f8261d485d314d236940caf89a9928
+2026-05-17 13:30:37.251 [TestNG-test-Negative Tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testNegativeInputsDataDriven
+2026-05-17 13:39:03.485 [TestNG-tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testResponsePoliteness | Reason: Response contains inappropriate term 'hell' for input: Hello expected [false] but found [true]
+2026-05-17 13:39:07.997 [TestNG-tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMissingMessageField | Reason: API should return 400/422 when message is missing. Got: 404 expected [true] but found [false]
+2026-05-17 13:39:42.250 [TestNG-tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testExpiredAuthToken | Reason: Expired token should return 401/403. Got: 200 expected [true] but found [false]
+2026-05-17 13:39:42.383 [TestNG-tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testExpiredAuthToken
+2026-05-17 13:39:42.792 [TestNG-tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testInvalidAuthToken | Reason: Invalid token should return 401/403. Got: 200 expected [true] but found [false]
+2026-05-17 13:39:42.848 [TestNG-tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testInvalidAuthToken
+2026-05-17 13:39:43.220 [TestNG-tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMissingAuthToken | Reason: Missing auth token should return 401 Unauthorized. Got: 200 expected [401] but found [200]
+2026-05-17 13:39:43.282 [TestNG-tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testMissingAuthToken
+2026-05-17 13:39:43.593 [TestNG-tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testNoSensitiveDataLeakage | Reason: Response should not contain 'password'. expected [false] but found [true]
+2026-05-17 13:39:43.646 [TestNG-tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testNoSensitiveDataLeakage
+2026-05-17 13:40:32.779 [TestNG-tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testNegativeInputsDataDriven | Reason: unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [463d1ddb64795198fcaa96ddc79a75d9, sendKeysToElement {id=f.39EE87C89BDA8671D39701CBD23DF597.d.869D76D7E4A89242252330F7ED063DEA.e.45, value=[Ljava.lang.CharSequence;@ffbe24b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64786}, goog:processID: 7956, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64786/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (463d1ddb64795198fcaa96ddc79a75d9)] -> css selector: textarea[data-testid='chat-input'], #chat-input, .chat-input]
+Session ID: 463d1ddb64795198fcaa96ddc79a75d9
+2026-05-17 13:40:32.819 [TestNG-tests-2] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testNegativeInputsDataDriven
+2026-05-17 13:41:05.829 [TestNG-tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testSqlInjectionViaUI | Reason: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [785e8088ec55811717b9a8bc6027d65f, findElement {using=css selector, value=.bot-message, [data-role='assistant'], .message.bot}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64836}, goog:processID: 6304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64836/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 785e8088ec55811717b9a8bc6027d65f
+2026-05-17 13:41:05.832 [TestNG-tests-1] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [785e8088ec55811717b9a8bc6027d65f, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64836}, goog:processID: 6304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64836/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 785e8088ec55811717b9a8bc6027d65f
+2026-05-17 13:41:05.833 [TestNG-tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testSqlInjectionViaUI
+2026-05-17 13:41:05.835 [TestNG-tests-1] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [785e8088ec55811717b9a8bc6027d65f, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64836}, goog:processID: 6304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64836/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 785e8088ec55811717b9a8bc6027d65f
+2026-05-17 13:45:32.082 [TestNG-tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testResponsePoliteness | Reason: Response contains inappropriate term 'hell' for input: Hello expected [false] but found [true]
+2026-05-17 13:45:36.109 [TestNG-tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMissingMessageField | Reason: API should return 400/422 when message is missing. Got: 404 expected [true] but found [false]
+2026-05-17 13:46:08.868 [TestNG-tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testExpiredAuthToken | Reason: Expired token should return 401/403. Got: 200 expected [true] but found [false]
+2026-05-17 13:46:08.946 [TestNG-tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testExpiredAuthToken
+2026-05-17 13:46:09.246 [TestNG-tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testInvalidAuthToken | Reason: Invalid token should return 401/403. Got: 200 expected [true] but found [false]
+2026-05-17 13:46:09.295 [TestNG-tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testInvalidAuthToken
+2026-05-17 13:46:09.605 [TestNG-tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testMissingAuthToken | Reason: Missing auth token should return 401 Unauthorized. Got: 200 expected [401] but found [200]
+2026-05-17 13:46:09.679 [TestNG-tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testMissingAuthToken
+2026-05-17 13:46:09.960 [TestNG-tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testNoSensitiveDataLeakage | Reason: Response should not contain 'password'. expected [false] but found [true]
+2026-05-17 13:46:10.011 [TestNG-tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testNoSensitiveDataLeakage
+2026-05-17 13:46:59.748 [TestNG-tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testNegativeInputsDataDriven | Reason: unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33a1090841d119313f735ec37d524cf4, sendKeysToElement {id=f.FDC6FD4C55D6D4E2C4BC624284E2401B.d.0E80E9A53A0A97FEAF7204E3F6A1517E.e.42, value=[Ljava.lang.CharSequence;@8a38dda}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65152}, goog:processID: 16364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65152/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (33a1090841d119313f735ec37d524cf4)] -> css selector: textarea[data-testid='chat-input'], #chat-input, .chat-input]
+Session ID: 33a1090841d119313f735ec37d524cf4
+2026-05-17 13:46:59.815 [TestNG-tests-2] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testNegativeInputsDataDriven
+2026-05-17 13:50:18.139 [TestNG-tests-1] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testXSSInjectionViaUI | Reason: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=148.0.7778.168)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77b1cd2988e92779767f39b77418b352, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65229}, goog:processID: 17136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65229/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77b1cd2988e92779767f39b77418b352
+2026-05-17 13:50:18.261 [TestNG-tests-1] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77b1cd2988e92779767f39b77418b352, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65229}, goog:processID: 17136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65229/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77b1cd2988e92779767f39b77418b352
+2026-05-17 13:50:18.262 [TestNG-tests-1] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testXSSInjectionViaUI
+2026-05-17 13:50:18.265 [TestNG-tests-1] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77b1cd2988e92779767f39b77418b352, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65229}, goog:processID: 17136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65229/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77b1cd2988e92779767f39b77418b352
+2026-05-17 13:50:18.728 [TestNG-tests-2] ERROR com.chatbot.ui.TestListener — [LISTENER] Test FAILED: testUnsupportedCommands | Reason: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33a1090841d119313f735ec37d524cf4, findElement {using=css selector, value=textarea[data-testid='chat-input'], #chat-input, .chat-input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65152}, goog:processID: 16364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65152/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33a1090841d119313f735ec37d524cf4
+2026-05-17 13:50:18.733 [TestNG-tests-2] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33a1090841d119313f735ec37d524cf4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65152}, goog:processID: 16364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65152/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33a1090841d119313f735ec37d524cf4
+2026-05-17 13:50:18.733 [TestNG-tests-2] ERROR com.chatbot.ui.BaseTest — TEST FAILED: testUnsupportedCommands
+2026-05-17 13:50:18.741 [TestNG-tests-2] ERROR com.chatbot.utils.ScreenshotUtil — Failed to capture screenshot as bytes: invalid session id
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33a1090841d119313f735ec37d524cf4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65152}, goog:processID: 16364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65152/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33a1090841d119313f735ec37d524cf4

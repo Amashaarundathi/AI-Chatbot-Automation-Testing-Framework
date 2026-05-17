@@ -3,7 +3,7 @@ package com.chatbot.utils;
 import com.chatbot.config.ConfigManager;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.javafaker.Faker;
+import net.datafaker.Faker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
